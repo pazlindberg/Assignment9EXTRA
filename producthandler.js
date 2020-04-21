@@ -26,7 +26,7 @@ function BuyProduct(prod)
 	var temp = document.getElementById(p).innerHTML;
 	//var t=products[x-1];
 
-	let t='id="product'+prod+' "';
+	let t='id="product'+prod+'"';
 	let o='onclick="BuyProduct('+ prod +')" '; 
 	let striking='style="text-decoration:line-through;" ';
 	let s='<a href="#" ' +  t + o + striking +'>' + temp +"!!" + '</a>';
