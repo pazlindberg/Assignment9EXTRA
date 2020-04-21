@@ -22,7 +22,7 @@ function AddProduct()
 	if(inputVal.length>0)
 	{
 		let t='id="product'+(products.length+1)+'"';
-		let s='<a href="#" ' +  t +  '>' + /*inputVal*/t + '</a>';
+		let s='<a href="#" ' +  t +  '>' + inputVal + '</a>';
 		products.push(s);
 	}
 	else
