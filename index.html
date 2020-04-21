@@ -1,0 +1,37 @@
+<!doctype html>
+
+<html lang="sv">
+	<head>
+		<meta charset="utf-8" />
+		<title>Assignment 9 | inköpslista</title>
+	</head>
+	<body onload="RenderProducts();">
+		<header>
+			<h1>Inköpslista</h1>
+			<p>As a part of assignment #9 for the Lexicon programming course, I made this thing according to specifications...</p>
+			<hr />
+		</header>
+		<section>
+			<form>
+				<label for="product">Produkt</label>
+				<input type="text" id="product" name="product" />
+								
+				<button type="button" onclick="AddProduct()">Add!</button>
+
+			</form>
+		
+			<div id="ProductList">
+			
+			</div>
+		</section>
+		
+		
+		<script src="producthandler.js">
+		
+		</script>
+		<footer>
+			<hr />
+			&copy;opyright Anderz Lindberg <date>2020-04-21</date>
+		</footer>
+	</body>
+</html>
