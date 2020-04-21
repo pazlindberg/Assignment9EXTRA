@@ -15,14 +15,20 @@ function RenderProducts()
 		}
 	}
 }
+function BuyProduct(prod)
+{
+	alert("buy" + prod);
+}
 
 function AddProduct()
 {
 	let inputVal=document.getElementById("product").value;
 	if(inputVal.length>0)
 	{
-		let t='id="product'+(products.length+1)+'"';
-		let s='<a href="#" ' +  t +  '>' + inputVal + '</a>';
+		let t='id="product'+(products.length+1)+' "';
+		
+		let o='onclick="BuyProduct('+ (products.length+1) +')"'; 
+		let s='<a href="#" ' +  t + o + '>' + inputVal + '</a>';
 		products.push(s);
 	}
 	else
