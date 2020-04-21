@@ -21,7 +21,8 @@ function AddProduct()
 	let inputVal=document.getElementById("product").value;
 	if(inputVal.length>0)
 	{
-		products.push(inputVal);
+		let s='<a href="#">' + inputVal + '</a>';
+		products.push(s);
 	}
 	
 	RenderProducts();
