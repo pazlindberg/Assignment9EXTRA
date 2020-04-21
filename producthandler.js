@@ -21,9 +21,13 @@ function AddProduct()
 	let inputVal=document.getElementById("product").value;
 	if(inputVal.length>0)
 	{
-		let s='<a href="#">' + inputVal + '</a>';
+		let t='id="product'+(products.length+1)+'"';
+		let s='<a href="#" ' +  t +  '>' + /*inputVal*/t + '</a>';
 		products.push(s);
 	}
-	
+	else
+	{
+		alert("invalid input!");
+	}
 	RenderProducts();
 }
